@@ -1,4 +1,5 @@
 const { newValidationError } = require("../errors");
+const checkGroupExistsService = require("./checkGroupExistsService");
 
 // Função de validação
 const validateRemoveGroupService = (data) => {
