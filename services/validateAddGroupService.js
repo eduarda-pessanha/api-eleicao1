@@ -5,16 +5,6 @@ const validateAddGroupService = (data) => {
     throw newValidationError("body isn't a valid object")
   }
 
-  if (!data.id) {
-    throw newValidationError("'id' is required")
-  } else if (
-    typeof data.id !== "number" ||
-    data.id < 1 ||
-    data.id % 1 !== 0
-  ) {
-    throw newValidationError("'id' must be a positive integer")
-  }
-
   if (!data.candidate) {
     throw newValidationError("'candidate' is required")
   } else if (
